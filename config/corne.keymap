@@ -98,7 +98,7 @@
 &none  &kp Y  &kp C           &kp L                         &kp M           &kp K        &kp Z            &kp F                           &kp U         &new_behavior COMMA MINUS  &kp Z  &none
 &none  &kp I  &kp S  &hm R LEFT_ALT                &hm T LEFT_GUI           &kp G        &kp P  &hm N RIGHT_GUI                 &hm E RIGHT_ALT                             &kp A  &kp O  &none
 &none  &kp Q  &kp V           &kp W                         &kp D           &kp J        &kp B            &kp H  &new_behavior SLASH UNDERSCORE  &new_behavior PERIOD EXCLAMATION  &kp X  &none
-                              &none  &new_behavior SPACE NUMBER_0  &sk LEFT_SHIFT    &kp LCTRL           &tog 1                    &kp NUMBER_0
+                         &bt BT_CLR  &new_behavior SPACE NUMBER_0  &sk LEFT_SHIFT    &kp LCTRL           &tog 1                    &kp NUMBER_0
       >;
     };
 
