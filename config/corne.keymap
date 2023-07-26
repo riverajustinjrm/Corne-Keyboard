@@ -95,37 +95,37 @@
 
     raise {
       bindings = <
-&none  &kp Y  &kp C           &kp L                         &kp M           &kp K        &kp Z            &kp F                           &kp U         &new_behavior COMMA MINUS  &kp Z  &none
-&none  &kp I  &kp S  &hm R LEFT_ALT                &hm T LEFT_GUI           &kp G        &kp P  &hm N RIGHT_GUI                 &hm E RIGHT_ALT                             &kp A  &kp O  &none
-&none  &kp Q  &kp V      &bt BT_NXT                         &kp D           &kp J        &kp B            &kp H  &new_behavior SLASH UNDERSCORE  &new_behavior PERIOD EXCLAMATION  &kp X  &none
-                         &bt BT_CLR  &new_behavior SPACE NUMBER_0  &sk LEFT_SHIFT    &kp LCTRL           &tog 1                    &kp NUMBER_0
+&none  &kp Y  &kp C           &kp L               &kp M           &kp K        &kp Z            &kp F                                             &kp U         &new_behavior COMMA MINUS  &kp BACKSPACE  &none
+&none  &kp I  &kp S  &hm R LEFT_ALT  &hm T LEFT_COMMAND           &kp G        &kp P  &hm N RIGHT_GUI                                   &hm E RIGHT_ALT                             &kp A          &kp O  &none
+&none  &kp Q  &kp V           &kp W               &kp D           &kp J        &kp B            &kp H                    &new_behavior SLASH UNDERSCORE  &new_behavior PERIOD EXCLAMATION          &kp X  &none
+                         &caps_word           &kp SPACE  &sk LEFT_SHIFT    &kp LCTRL           &tog 1  &new_behavior LEFT_PARENTHESIS RIGHT_PARENTHESIS
       >;
     };
 
     base {
       bindings = <
-&kp N0        &kp ESC  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)      &kp SEMI  &kp BSPC   &kp N0
-&kp N0        &kp TAB   &kp EQUAL        &kp SQT       &kp SQT        &kp SQT         &kp BSLH        &kp N0  &kp LS(RBRC)  &kp LS(PIPE)   &kp RET   &kp N0
-&kp N0  &kp LS(TILDE)      &kp N0    &kp LS(DQT)   &kp LS(DQT)    &kp LS(DQT)         &kp LBKT  &kp LS(LPAR)  &kp LS(RPAR)        &kp N0    &kp N3  &kp ESC
-                                          &kp N0        &kp N1      &kp LSHFT         &kp RALT        &kp N4        &kp N0
-      >;
-    };
-
-    lower {
-      bindings = <
-&trans  &kp ESC  &kp N0  &kp N0  &kp N0     &kp Q    &kp CARET  &kp AMPS  &kp KP_MULTIPLY   &kp LPAR  &kp BSPC  &trans
-&trans  &kp TAB  &trans  &trans  &trans  &kp BSPC     &kp LEFT  &kp DOWN           &kp UP  &kp RIGHT   &kp RET  &kp N0
-&trans   &trans  &trans  &trans  &trans    &trans    &kp UNDER  &kp PLUS         &kp LBRC   &kp RBRC  &kp PIPE  &kp N0
-                         &kp N0  &kp N1  &kp RGUI     &kp RALT    &kp N2           &trans
+&kp N0    &kp LS(ESC)    &kp LS(AT)      &kp LS(HASH)                 &kp LS(DOLLAR)  &kp LS(PRCNT)    &kp LS(CARET)        &kp LS(AMPS)  &kp LS(STAR)           &kp SEMI  &kp BSPC   &kp N0
+&kp N0        &kp TAB     &kp EQUAL           &kp SQT                      &kp MINUS      &kp SLASH         &kp BSLH  &kp LS(LEFT_BRACE)  &kp LS(RBRC)       &kp LS(PIPE)   &kp RET   &kp N0
+&kp N0  &kp LS(TILDE)  &kp QUESTION       &kp LS(DQT)  &new_behavior COLON SEMICOLON  &kp LS(GRAVE)         &kp LBKT        &kp LS(LPAR)  &kp LS(RPAR)  &kp RIGHT_BRACKET    &tog 3  &kp ESC
+                                     &kp LEFT_COMMAND                         &tog 0      &kp LSHFT         &kp RALT              &tog 2     &kp SPACE
       >;
     };
 
     both {
       bindings = <
-&trans  &trans        &trans  &trans   &trans  &bt BT_SEL 0    &bt BT_SEL 3  &kp N1  &kp N2  &kp N3  &kp BSPC  &kp N0
-&trans  &trans        &trans  &trans   &trans  &bt BT_SEL 1    &bt BT_SEL 4  &kp N4  &kp N5  &kp N6   &kp RET  &kp N0
-&trans  &trans  &kp LS(STAR)  &trans  &kp DOT  &bt BT_SEL 2          &kp N0  &kp N7  &kp N8  &kp N9    &kp N3  &kp N0
-                              &trans   &kp N1      &kp LGUI        &kp RALT  &kp N2  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4                           &kp ASTERISK     &kp N1        &kp N2  &kp N3  &kp BSPC  &kp N0
+&trans       &kp TAB         &kp W     &kp SLASH  &kp LS(CARET)  &kp LS(PLUS)                              &kp EQUAL     &kp N4        &kp N5  &kp N6   &kp RET  &kp N0
+&trans      &kp LEFT     &kp RIGHT        &kp UP       &kp DOWN     &kp MINUS    &new_behavior LEFT_PARENTHESIS RPAR     &kp N7        &kp N8  &kp N9  &kp PIPE  &kp N0
+                                      &bt BT_CLR      &kp SPACE        &tog 0                               &kp RALT  &kp LCTRL  &kp NUMBER_0
+      >;
+    };
+
+    layer_3 {
+      bindings = <
+&trans  &tog 0  &tog 1  &tog 2  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
       >;
     };
   };
