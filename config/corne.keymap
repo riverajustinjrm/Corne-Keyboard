@@ -113,10 +113,10 @@
 
     both {
       bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4                           &kp ASTERISK     &kp N1        &kp N2  &kp N3  &kp BSPC  &kp N0
-&trans       &kp TAB         &kp W     &kp SLASH  &kp LS(CARET)  &kp LS(PLUS)                              &kp EQUAL     &kp N4        &kp N5  &kp N6   &kp RET  &kp N0
-&trans      &kp LEFT     &kp RIGHT        &kp UP       &kp DOWN     &kp MINUS    &new_behavior LEFT_PARENTHESIS RPAR     &kp N7        &kp N8  &kp N9  &kp PIPE  &kp N0
-                                      &bt BT_CLR      &kp SPACE  &kp LEFT_ALT                                 &tog 0  &kp LCTRL  &kp NUMBER_0
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4                           &kp ASTERISK  &kp N1        &kp N2  &kp N3  &kp BSPC  &kp N0
+&trans       &kp TAB         &kp W     &kp SLASH  &kp LS(CARET)  &kp LS(PLUS)                              &kp EQUAL  &kp N4        &kp N5  &kp N6   &kp RET  &kp N0
+&trans      &kp LEFT     &kp RIGHT        &kp UP       &kp DOWN     &kp MINUS    &new_behavior LEFT_PARENTHESIS RPAR  &kp N7        &kp N8  &kp N9  &kp PIPE  &kp N0
+                                      &bt BT_CLR      &kp SPACE  &kp LEFT_ALT                       &kp LEFT_CONTROL  &tog 0  &kp NUMBER_0
       >;
     };
 
